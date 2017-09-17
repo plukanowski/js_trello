@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+$basicFonts: 'Oswald', sans-serif; 
+$fontColor: #080606;
+
+body {
+	font-size: 16px;
+	font-family: $basicFonts;
+	background: #586670;
+	
+}
+
+button {
+	font-family: Tahoma, sans-serif;
+	padding: 5px 10px;
+	border: none;
+	background: #70767A;
+	border: 1px solid $fontColor;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+	}
+}
+
+button.btn-delete {
+	margin-right: 10px;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	color: $fontColor;
+}
+
+.column-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	min-height: 1px;
+	width: calc(33.33% - 40px);
+	background: #8B8C8D;
+	padding: 10px 20px;
+	margin: 20px;
+	box-sizing: border-box;
+	border: 2px solid $fontColor;
+	border-radius: 15px 0;
+}
+
+.board-heading {
+	text-align: right;
+	margin: 50px 0 100px;
+	h1 {
+		font-size: 2.5rem;
+		letter-spacing: 20px;
+	}
+	
+	.create-column {
+		margin-right: 20px;
+	}
+}
+
+.column-card-list {
+	list-style-type: none;
+}
+
+.card {
+	cursor: move;
+	.btn-delete,
+	.card-description {
+		display: inline-block;
+	}
+}
