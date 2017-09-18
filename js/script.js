@@ -11,7 +11,7 @@ $(function() {
 	function initSortable() {
 		$('.column-card-list').sortable({
 			connectWith: '.column-card-list',
-			placeHolder: '.card-placeholder'
+			placeholder: 'card-placeholder'
 		}).disableSelection();
 	}
 	

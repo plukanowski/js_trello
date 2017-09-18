@@ -49,12 +49,19 @@ button.btn-delete {
     margin-right: 20px; }
 
 .column-card-list {
-  list-style-type: none; }
+  list-style-type: none;
+  min-height: 200px;
+  transition: .2s; }
 
 .card {
   cursor: move; }
   .card .btn-delete,
   .card .card-description {
     display: inline-block; }
+
+.card-placeholder {
+  background: #586670;
+  height: 40px;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -65,6 +65,8 @@ button.btn-delete {
 
 .column-card-list {
 	list-style-type: none;
+	min-height: 200px;
+		transition: .2s;
 }
 
 .card {
@@ -73,4 +75,10 @@ button.btn-delete {
 	.card-description {
 		display: inline-block;
 	}
+}
+
+.card-placeholder {
+	background: #586670;
+	height: 40px;
+	width: 100%;
 }
