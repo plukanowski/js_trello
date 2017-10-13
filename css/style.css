@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+body {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  background: #586670; }
+
+button {
+  font-family: Tahoma, sans-serif;
+  padding: 5px 10px;
+  border: none;
+  background: #70767A;
+  border: 1px solid #080606;
+  cursor: pointer; }
+  button:focus {
+    outline: 0; }
+
+button.btn-delete {
+  margin-right: 10px; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #080606; }
+
+.column-container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.column {
+  float: left;
+  min-height: 1px;
+  width: calc(33.33% - 40px);
+  background: #8B8C8D;
+  padding: 10px 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  border: 2px solid #080606;
+  border-radius: 15px 0; }
+
+.board-heading {
+  text-align: right;
+  margin: 50px 0 100px; }
+  .board-heading h1 {
+    font-size: 2.5rem;
+    letter-spacing: 20px; }
+  .board-heading .create-column {
+    margin-right: 20px; }
+
+.column-card-list {
+  list-style-type: none;
+  min-height: 200px;
+  transition: .2s; }
+
+.card {
+  cursor: move; }
+  .card .btn-delete,
+  .card .card-description {
+    display: inline-block; }
+
+.card-placeholder {
+  background: #586670;
+  height: 40px;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
